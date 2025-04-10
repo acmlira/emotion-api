@@ -8,6 +8,13 @@ API to extract emotion from text. This project is using `j-hartmann/emotion-engl
 python -m venv venv
 pip install --no-cache-dir -r requirements.txt
 ```
+
+or
+
+```
+docker-compose up --build
+```
+
 ## Useful links
 
 API: http://localhost:5000/v1/analysis
