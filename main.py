@@ -1,8 +1,10 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from transformers import pipeline
 from flasgger import Swagger
 
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "*"}})
 swagger = Swagger(app)
 
 # Load the model
